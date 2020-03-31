@@ -1,56 +1,126 @@
-body {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* for any screen larger than 600px */
+  @media screen and (min-width:600px){
+    /* adjusted margin to 0 for body and all font will be set */
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav {
+      /* set background color for nav */
+      background-color: #3498db;
+      /* assigned height to 10 view height */
+      height: 10vh;
+      /* this line allows you to place elements using align-items and justify-content */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav h1 {
+      color: white;
+      /* set spacing for each letters */
+      letter-spacing: 3px;
+    }
+    main {
+      background-color: #ecf0f1;
+      display: flex;
+      height: 80vh;
+      /* need to look it up how it actually works */
+      overflow: hidden;
+      align-items: center;
+    }
+    section {
+      width: 100%;
+      display: flex;
+    }
+    .image-section {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-section img {
+      border-radius: 100%;
+      width: 400px;
+      height: 400px;
+    }
+    article {
+      color: #2c3e50;
+      /* need to look up as well */
+      align-self: flex-start;
+      width: 50%;
+    }
+    article h2 {
+      color: #3498db;
+      margin: 0;
+      text-align: center;
+    }
+    article p {
+      padding: 40px;
+      padding-top: 10px;
+      line-height: 25px;
+    }
+    footer {
+      background-color: #3498db;
+      height: 10vh;
+    }
   }
-  nav {
-    background-color: #3498db;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  nav h1 {
-    color: white;
-    letter-spacing: 3px;
-  }
-  main {
-    background-color: #ecf0f1;
-    display: flex;
-    height: 80vh;
-    overflow: hidden;
-    align-items: center;
-  }
-  section {
-    width: 100%;
-    display: flex;
-  }
-  .image-section {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .image-section img {
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
-  }
-  article {
-    color: #2c3e50;
-    align-self: flex-start;
-    width: 50%;
-  }
-  article h2 {
-    color: #3498db;
-    margin: 0;
-    text-align: center;
-  }
-  article p {
-    padding: 40px;
-    padding-top: 10px;
-    line-height: 25px;
-  }
-  footer {
-    background-color: #3498db;
-    height: 10vh;
+
+ /* for any screen smaller than 599px */
+  @media screen and (max-width: 599px){
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav {
+      background-color: #3498db;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav h1 {
+      color: white;
+      letter-spacing: 3px;
+    }
+    main {
+      background-color: #ecf0f1;
+      display: flex;
+      height: 80vh;
+      overflow: hidden;
+      align-items: center;
+    }
+    section {
+      width: 100%;
+      display: flex;
+    }
+    .image-section {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-section img {
+      border-radius: 100%;
+      width: 400px;
+      height: 400px;
+    }
+    article {
+      color: #2c3e50;
+      align-self: flex-start;
+      width: 50%;
+    }
+    article h2 {
+      color: #3498db;
+      margin: 0;
+      text-align: center;
+    }
+    article p {
+      padding: 40px;
+      padding-top: 10px;
+      line-height: 25px;
+    }
+    footer {
+      background-color: #3498db;
+      height: 10vh;
+    }
   }
